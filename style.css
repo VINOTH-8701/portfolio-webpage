@@ -1,0 +1,302 @@
+/* ===== General ===== */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+    background:#111;
+    color:#fff;
+    line-height:1.6;
+}
+
+a{
+    text-decoration:none;
+}
+
+/* ===== Navigation ===== */
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:#222;
+}
+
+.logo h2{
+    color:#00e5ff;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+}
+
+.nav-links li{
+    margin-left:25px;
+}
+
+.nav-links a{
+    color:#fff;
+    transition:.3s;
+}
+
+.nav-links a:hover,
+.nav-links .active{
+    color:#00e5ff;
+}
+
+/* ===== Hero ===== */
+
+.hero{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:80px 8%;
+    flex-wrap:wrap;
+}
+
+.hero-text{
+    max-width:550px;
+}
+
+.hero h1{
+    font-size:55px;
+    color:#00e5ff;
+}
+
+.hero h2{
+    margin:15px 0;
+}
+
+.hero p{
+    margin:20px 0;
+}
+
+.hero-image img{
+    width:320px;
+    border-radius:50%;
+    border:5px solid #00e5ff;
+}
+
+/* ===== Buttons ===== */
+
+.btn,
+.btn2{
+    display:inline-block;
+    padding:12px 25px;
+    margin-top:15px;
+    border-radius:5px;
+    font-weight:bold;
+}
+
+.btn{
+    background:#00e5ff;
+    color:#111;
+}
+
+.btn2{
+    border:2px solid #00e5ff;
+    color:#00e5ff;
+    margin-left:10px;
+}
+
+.btn:hover{
+    background:#fff;
+}
+
+.btn2:hover{
+    background:#00e5ff;
+    color:#111;
+}
+
+/* ===== Sections ===== */
+
+section{
+    padding:70px 8%;
+}
+
+section h1,
+section h2{
+    text-align:center;
+    margin-bottom:30px;
+    color:#00e5ff;
+}
+
+/* ===== About ===== */
+
+.about{
+    text-align:center;
+}
+
+.about-img{
+    width:220px;
+    border-radius:50%;
+    margin:25px 0;
+    border:4px solid cyan;
+}
+
+.about-info{
+    margin-top:30px;
+}
+
+.about-info p{
+    margin:10px 0;
+}
+
+/* ===== Skills ===== */
+
+.skill{
+    margin:25px 0;
+}
+
+.progress{
+    background:#333;
+    border-radius:20px;
+    overflow:hidden;
+}
+
+.progress-bar{
+    background:#00e5ff;
+    color:#111;
+    padding:10px;
+    text-align:right;
+    font-weight:bold;
+}
+
+/* ===== Projects ===== */
+
+.project-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.project-card{
+    background:#222;
+    border-radius:10px;
+    padding:20px;
+    text-align:center;
+    transition:.3s;
+}
+
+.project-card img{
+    width:100%;
+    border-radius:10px;
+}
+
+.project-card:hover{
+    transform:translateY(-8px);
+}
+
+.project-card h2{
+    margin:15px 0;
+}
+
+/* ===== Services ===== */
+
+.service-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#222;
+    padding:25px;
+    text-align:center;
+    border-radius:10px;
+}
+
+.card i{
+    font-size:40px;
+    color:#00e5ff;
+    margin-bottom:15px;
+}
+
+/* ===== Contact ===== */
+
+.contact-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+}
+
+.contact-form input,
+.contact-form textarea{
+    width:100%;
+    padding:12px;
+    margin:12px 0;
+    border:none;
+    border-radius:5px;
+}
+
+.contact-form button{
+    width:100%;
+}
+
+.contact-info p{
+    margin:15px 0;
+}
+
+.social-links a{
+    color:#00e5ff;
+    font-size:28px;
+    margin-right:15px;
+}
+
+.social-links a:hover{
+    color:white;
+}
+
+/* ===== Footer ===== */
+
+footer{
+    background:#222;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+footer .social a{
+    color:#00e5ff;
+    margin:0 12px;
+    font-size:22px;
+}
+
+footer .social a:hover{
+    color:#fff;
+}
+
+/* ===== Responsive ===== */
+
+@media(max-width:768px){
+
+.navbar{
+    flex-direction:column;
+}
+
+.nav-links{
+    margin-top:15px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.hero{
+    flex-direction:column;
+    text-align:center;
+}
+
+.hero-image img{
+    width:220px;
+    margin-top:30px;
+}
+
+.hero h1{
+    font-size:40px;
+}
+
+}
